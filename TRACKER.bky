@@ -1,0 +1,627 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="wkls:!(g;vz:^cG+]dL]" x="-243" y="-568">
+    <mutation component_type="LocationSensor" is_generic="false" instance_name="LocationSensor1" event_name="LocationChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+    <statement name="DO">
+      <block type="component_method" id="fw)-xqMF{~SVCu_/[Eru">
+        <mutation component_type="Map" method_name="PanTo" is_generic="false" instance_name="Map1"></mutation>
+        <field name="COMPONENT_SELECTOR">Map1</field>
+        <value name="ARG0">
+          <block type="lexical_variable_get" id="+o%bdfbCrl?M$I=#m``.">
+            <mutation>
+              <eventparam name="latitude"></eventparam>
+            </mutation>
+            <field name="VAR">latitude</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="lexical_variable_get" id="$fB~Z^V;i77X^5j]LzAQ">
+            <mutation>
+              <eventparam name="longitude"></eventparam>
+            </mutation>
+            <field name="VAR">longitude</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="math_number" id="R?wl+kRheLim+z+f.%96">
+            <field name="NUM">15</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="]l-V:edoind-GLY}xw~M">
+            <mutation component_type="Marker" method_name="SetLocation" is_generic="false" instance_name="Marker1"></mutation>
+            <field name="COMPONENT_SELECTOR">Marker1</field>
+            <value name="ARG0">
+              <block type="lexical_variable_get" id="m`:Y@I%5RpRA2-Dx2b|J">
+                <mutation>
+                  <eventparam name="latitude"></eventparam>
+                </mutation>
+                <field name="VAR">latitude</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="lexical_variable_get" id="_}T.9x,MTJ!-Y[AumwNa">
+                <mutation>
+                  <eventparam name="longitude"></eventparam>
+                </mutation>
+                <field name="VAR">longitude</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="MY_6OK9ua]PW=m7%3ulw" x="-1377" y="-495">
+    <field name="NAME">Address</field>
+    <statement name="STACK">
+      <block type="component_set_get" id="z{+y^fgq,e|$z:fd+5n(">
+        <mutation component_type="VerticalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="SearchSpace"></mutation>
+        <field name="COMPONENT_SELECTOR">SearchSpace</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_false" id="pwU_b9CMput3{c}~N!]K">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id=")M;g}q#ZEMqB4FJ=cp+L">
+            <mutation component_type="Form" set_or_get="set" property_name="BackgroundImage" is_generic="false" instance_name="TRACKER"></mutation>
+            <field name="COMPONENT_SELECTOR">TRACKER</field>
+            <field name="PROP">BackgroundImage</field>
+            <value name="VALUE">
+              <block type="logic_false" id="$hHGzR-[Xk{Gcr#2nv[c">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="5U?Z0=f[nP2;Ca~Z$_0e">
+                <mutation component_type="Map" set_or_get="set" property_name="Visible" is_generic="false" instance_name="Map1"></mutation>
+                <field name="COMPONENT_SELECTOR">Map1</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="2aY|79`Pi*/lP4#RyRkj">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="DsyBM7u;#./TDNR[R;o`">
+                    <mutation component_type="Form" set_or_get="set" property_name="BackgroundColor" is_generic="false" instance_name="TRACKER"></mutation>
+                    <field name="COMPONENT_SELECTOR">TRACKER</field>
+                    <field name="PROP">BackgroundColor</field>
+                    <value name="VALUE">
+                      <block type="color_white" id="wnh^LB4|1#,]WPj;#GXi">
+                        <field name="COLOR">#ffffff</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="iuk-s~B^Jupd5A8)A[kL">
+                        <mutation component_type="Map" method_name="PanTo" is_generic="false" instance_name="Map1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Map1</field>
+                        <value name="ARG0">
+                          <block type="component_method" id="QVt+tkGLLy~$?!MrF2dc">
+                            <mutation component_type="LocationSensor" method_name="LatitudeFromAddress" is_generic="false" instance_name="LocationSensor1"></mutation>
+                            <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                            <value name="ARG0">
+                              <block type="component_set_get" id="|,|FC7{#X=URiMFS7gi$">
+                                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                                <field name="COMPONENT_SELECTOR">TextBox1</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="component_method" id="_Ig~;lcpy]5;K;0az,i)">
+                            <mutation component_type="LocationSensor" method_name="LongitudeFromAddress" is_generic="false" instance_name="LocationSensor1"></mutation>
+                            <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                            <value name="ARG0">
+                              <block type="component_set_get" id="YXsdrHzAnUUwqb4E/eFC">
+                                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                                <field name="COMPONENT_SELECTOR">TextBox1</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block type="math_number" id="YE0~y7YahaaCyCksgt[9">
+                            <field name="NUM">15</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="i7.gx0b~BE%)[CbteINH">
+                            <mutation component_type="Marker" method_name="SetLocation" is_generic="false" instance_name="Marker1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Marker1</field>
+                            <value name="ARG0">
+                              <block type="component_method" id="nb0nR(`Lly/)`EU5|myv">
+                                <mutation component_type="LocationSensor" method_name="LatitudeFromAddress" is_generic="false" instance_name="LocationSensor1"></mutation>
+                                <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                                <value name="ARG0">
+                                  <block type="component_set_get" id="*V-Nyc57x$XO68`=;[#[">
+                                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TextBox1</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="component_method" id=".tZ1Mt4s$t7IiN9S.)ut">
+                                <mutation component_type="LocationSensor" method_name="LongitudeFromAddress" is_generic="false" instance_name="LocationSensor1"></mutation>
+                                <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                                <value name="ARG0">
+                                  <block type="component_set_get" id="C9N{nUd`kddF$!Uy)XR%">
+                                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TextBox1</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="d1m#}eHwF57M},?LAh[D" x="186" y="-528">
+    <mutation component_type="Form" is_generic="false" instance_name="TRACKER" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">TRACKER</field>
+    <statement name="DO">
+      <block type="component_set_get" id="j^q`:6cK})zU(;%2v}+L">
+        <mutation component_type="VerticalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="SearchSpace"></mutation>
+        <field name="COMPONENT_SELECTOR">SearchSpace</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="J?H~nRNs@.1;mr+dTNr?">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="}_U+kCfv@Vi|}5bwa}X-">
+            <mutation component_type="Map" set_or_get="set" property_name="Visible" is_generic="false" instance_name="Map1"></mutation>
+            <field name="COMPONENT_SELECTOR">Map1</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="^zCtGs%_7^#k}uR0G7sw">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="AIi[(5E_R6/+L?u+E=%c">
+                <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="Intro"></mutation>
+                <field name="COMPONENT_SELECTOR">Intro</field>
+                <value name="ARG0">
+                  <block type="text" id="_12^I0(qeLhaNtSihu`O">
+                    <field name="TEXT">You are currently on the Tracker page.  If you would like me to read out the information on this page say, speak.</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="Ud:kr#@bHH?f29C(T$u8">
+                    <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="speak"></mutation>
+                    <field name="COMPONENT_SELECTOR">speak</field>
+                    <field name="PROP">UseLegacy</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="-ta`(Rtn/qok*P.4A)+!">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="F!ao{QH8__G:-aP?@qtT" x="577" y="-387">
+    <field name="NAME">describe</field>
+    <statement name="STACK">
+      <block type="lexical_variable_set" id="mg{%2@ACh@EcC,Kvp`e6">
+        <field name="VAR">global random</field>
+        <value name="VALUE">
+          <block type="math_random_int" id="}3ogtq?C=t(F7P*Of8g4">
+            <value name="FROM">
+              <block type="math_number" id="^p@uj)s!aH^v2Plwjy)P">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_number" id=";Kgt5gXh0gV#}_j[~S(0">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="cDp*/b%hO]:G$xBidVaR">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="*TokVSunc[[xMFcWy2BF">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="_k|q2BG.NMy(?AcG)C?1">
+                    <field name="VAR">global random</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="hsFNZX.EC^b!3xiKMNwv">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="/UKbu)q=jfjaU6+iOR;O">
+                <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="describe"></mutation>
+                <field name="COMPONENT_SELECTOR">describe</field>
+                <value name="ARG0">
+                  <block type="text" id="O1.^OF([zO~@VG$1ICQm">
+                    <field name="TEXT">Nobody that lives close to you has tested positive.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_method" id="7HU,:Dp-m8#AmyzEets,">
+                <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="describe"></mutation>
+                <field name="COMPONENT_SELECTOR">describe</field>
+                <value name="ARG0">
+                  <block type="text" id=".06{70De?AdfTT@gaa#c">
+                    <field name="TEXT">A few people that live close to you have tested positive.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="G!eLRVKDr##{~*v,vy=A" x="131" y="-336">
+    <field name="NAME">random</field>
+    <value name="VALUE">
+      <block type="math_number" id="~:s}uvSMsdh8c~lSx#17">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="ojb#!V;t[AC-M+j*OU@-" x="-285" y="-259">
+    <mutation component_type="Button" is_generic="false" instance_name="SEARCH" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">SEARCH</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="=8Ax)kwNTTklIbPB]`-." inline="false">
+        <mutation name="Address"></mutation>
+        <field name="PROCNAME">Address</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="(-[mdyny4zaY3%M#Gi!h" x="264" y="-277">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="describe" event_name="BeforeSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">describe</field>
+    <statement name="DO">
+      <block type="controls_if" id="A^k[eM]2.:MB-X)eJWvJ">
+        <value name="IF0">
+          <block type="logic_compare" id="bRE,H+NC[@OmdS[iHa/{">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="KET;KRv%8?_BO^E#G+;|">
+                <mutation component_type="Map" set_or_get="get" property_name="Visible" is_generic="false" instance_name="Map1"></mutation>
+                <field name="COMPONENT_SELECTOR">Map1</field>
+                <field name="PROP">Visible</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_boolean" id="NjXO+#$rSOlZyO0}{io!">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="procedures_callnoreturn" id="/cLD.zwYn7_FWx.+:j8r" inline="false">
+            <mutation name="describe"></mutation>
+            <field name="PROCNAME">describe</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="o^5{%_:NaK$*V|.FVdh1" x="-1580" y="-54">
+    <field name="NAME">location</field>
+    <statement name="STACK">
+      <block type="component_set_get" id="gL}Y0_c[ZMAIm7Q26*cD">
+        <mutation component_type="Form" set_or_get="set" property_name="BackgroundImage" is_generic="false" instance_name="TRACKER"></mutation>
+        <field name="COMPONENT_SELECTOR">TRACKER</field>
+        <field name="PROP">BackgroundImage</field>
+        <value name="VALUE">
+          <block type="logic_false" id="iCjlDi%cTOhrgA0m(N=G">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="?5p6lN(uQNJO_z[+B(]{">
+            <mutation component_type="Form" set_or_get="set" property_name="BackgroundColor" is_generic="false" instance_name="TRACKER"></mutation>
+            <field name="COMPONENT_SELECTOR">TRACKER</field>
+            <field name="PROP">BackgroundColor</field>
+            <value name="VALUE">
+              <block type="color_white" id="@aW,U@)SV7L=#@hW7zOh">
+                <field name="COLOR">#ffffff</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="h$U78sNn](^X;Rwma:!f">
+                <mutation component_type="Map" set_or_get="set" property_name="Visible" is_generic="false" instance_name="Map1"></mutation>
+                <field name="COMPONENT_SELECTOR">Map1</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="v9TytN-~ALo3/_drX9;D">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="]5+%ZcS|MlpiHCUHG!oE">
+                    <mutation component_type="LocationSensor" set_or_get="set" property_name="Enabled" is_generic="false" instance_name="LocationSensor1"></mutation>
+                    <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                    <field name="PROP">Enabled</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="[G:yUYZ5V,8xk,z9Gr/[">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="h4w(u?N3dB!^VW[vr7tD">
+                        <mutation component_type="Map" method_name="PanTo" is_generic="false" instance_name="Map1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Map1</field>
+                        <value name="ARG0">
+                          <block type="component_set_get" id=",x(CcJTFW,J8r1e}$s?;">
+                            <mutation component_type="LocationSensor" set_or_get="get" property_name="Latitude" is_generic="false" instance_name="LocationSensor1"></mutation>
+                            <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                            <field name="PROP">Latitude</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="component_set_get" id="!WMleeiKXL~gM~WqyJqA">
+                            <mutation component_type="LocationSensor" set_or_get="get" property_name="Longitude" is_generic="false" instance_name="LocationSensor1"></mutation>
+                            <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                            <field name="PROP">Longitude</field>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block type="math_number" id="c6Cbip?pcGxk9w?Ja4n:">
+                            <field name="NUM">15</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="~JATI#+Slr.)o).^,yf!">
+                            <mutation component_type="Marker" method_name="SetLocation" is_generic="false" instance_name="Marker1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Marker1</field>
+                            <value name="ARG0">
+                              <block type="component_set_get" id="*}Y+!:,]EC)Z;jB1O4F$">
+                                <mutation component_type="LocationSensor" set_or_get="get" property_name="Latitude" is_generic="false" instance_name="LocationSensor1"></mutation>
+                                <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                                <field name="PROP">Latitude</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="component_set_get" id=",{|baaz8jg{uq]|e=*.%">
+                                <mutation component_type="LocationSensor" set_or_get="get" property_name="Longitude" is_generic="false" instance_name="LocationSensor1"></mutation>
+                                <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+                                <field name="PROP">Longitude</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="^j{;P$pMnT+U()r-JkTk" x="-66" y="-47">
+    <mutation component_type="Image" is_generic="false" instance_name="Image1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Image1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="Mn.b;Q{Q9~+7=r=4}`=7">
+        <value name="SCREEN">
+          <block type="text" id="RLO#`m|`v7X{R?q!^-v/">
+            <field name="TEXT">HOME</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="U()E9Jhi.AO3im#+$-6l" x="-333" y="63">
+    <mutation component_type="Button" is_generic="false" instance_name="Location" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Location</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="q{rhd9z`$Vqq?boHpz]e" inline="false">
+        <mutation name="location"></mutation>
+        <field name="PROCNAME">location</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="/BB+5C|qNjwNk=`y6(J!" x="-1024" y="105">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="Intro" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">Intro</field>
+    <statement name="DO">
+      <block type="component_method" id="{gJ63lq#S6`6!B;[nrB@">
+        <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="speak"></mutation>
+        <field name="COMPONENT_SELECTOR">speak</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="5rwG3q|8u%l1lPN89Tva" x="-1159" y="208">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="speak" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">speak</field>
+    <statement name="DO">
+      <block type="controls_if" id="G++.$XDWgr9=8^@ZLq+%">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="rS*xOzzi1*@!lF}YQ~Rt">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="MUVS{qB*rtZm~3O7v:PI">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="speak"></mutation>
+                <field name="COMPONENT_SELECTOR">speak</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="+O_kVL3KV30F_t,?Gt~#">
+                <field name="TEXT">speak</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="NL56PJU`Ux02;S7x+(Z0">
+            <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="Asking"></mutation>
+            <field name="COMPONENT_SELECTOR">Asking</field>
+            <value name="ARG0">
+              <block type="text" id="5/8J8,R=ECJ4OfY6z-`N">
+                <field name="TEXT">If you would like me to use your current location say, yes. Otherwise please say your postal code. If you would like to go back to the home page say, home.</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="oQI6jf9gD]yutYe0lZdp">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="speak"></mutation>
+            <field name="COMPONENT_SELECTOR">speak</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="@)@d+wlkemJ8s.B7^XIm">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="sU7N9/WuRZe[W`$cq/jz">
+                <mutation component_type="SpeechRecognizer" method_name="Stop" is_generic="false" instance_name="speak"></mutation>
+                <field name="COMPONENT_SELECTOR">speak</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="yBXy=l3qOPuBuOtO)w1`" x="-389" y="207">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="yesNo" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">yesNo</field>
+    <statement name="DO">
+      <block type="controls_if" id="Gy3A*}Z{vt+6=|sVe=?4">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="mQY)F`6PLf,cJynC*ckL">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="=u7V@-xJ-ZPMRz6X)GSG">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="yesNo"></mutation>
+                <field name="COMPONENT_SELECTOR">yesNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="XcC_M1dRnL]!`n$[baIJ">
+                <field name="TEXT">yes</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="procedures_callnoreturn" id="cylY_T#{nN~:?ZZ9H;_," inline="false">
+            <mutation name="location"></mutation>
+            <field name="PROCNAME">location</field>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="?K6u{ayZ9O:mK#s/%F{N">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="enB91aO=sd8c*_pEARX3">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="yesNo"></mutation>
+                <field name="COMPONENT_SELECTOR">yesNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="]hI5SxKc))qXx[=Ex2oV">
+                <field name="TEXT">home</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="controls_openAnotherScreen" id="rdZt;tan7V4%pX8Nd-r,">
+            <value name="SCREEN">
+              <block type="text" id="bfuwzQ[mu|gAut2I|-8P">
+                <field name="TEXT">HOME</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="O#T`yg]!VMr(;}KN_yh:">
+            <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+            <field name="COMPONENT_SELECTOR">TextBox1</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="component_set_get" id="~kpouh1x`{PtpX|;~atp">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="yesNo"></mutation>
+                <field name="COMPONENT_SELECTOR">yesNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="llCfg`9tZ/DvBO@x=8A1" inline="false">
+                <mutation name="Address"></mutation>
+                <field name="PROCNAME">Address</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="c1[:?n0EqIvLY7h?*yQO" x="422" y="185">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="describe" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">describe</field>
+    <statement name="DO">
+      <block type="component_method" id="rGK7koiM8Ek_HvbtlFMZ">
+        <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="Asking"></mutation>
+        <field name="COMPONENT_SELECTOR">Asking</field>
+        <value name="ARG0">
+          <block type="text" id="E4-_{}ahX1cO(`w[]XF*">
+            <field name="TEXT">If you would like to go back to the home page say, home.</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="dzS[jMHu1B^ADwk3C=;;" x="-703" y="367">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="Asking" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">Asking</field>
+    <statement name="DO">
+      <block type="component_method" id="Xc-MP+K,D7!~3g*y*Y-m">
+        <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="yesNo"></mutation>
+        <field name="COMPONENT_SELECTOR">yesNo</field>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

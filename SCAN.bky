@@ -1,0 +1,437 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="S36GZf#tpZTu{FX]:iN^" x="107" y="-583">
+    <field name="NAME">clicked</field>
+    <statement name="STACK">
+      <block type="component_set_get" id="sm88vi*D$RO5.1kwa6ND">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="bp"></mutation>
+        <field name="COMPONENT_SELECTOR">bp</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="text_join" id="zUL|1VZ[QnKWZtuxn?+#">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="math_random_int" id="e}A@:m5*Bbh#W8Ay6tU6">
+                <value name="FROM">
+                  <block type="math_number" id="+M(_2p2*.Yuw2]mQ[YIl">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_number" id="!cZChf6e=Uf{3Jif}eT^">
+                    <field name="NUM">160</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text_join" id="V:_L|%Vg~g?g;Tc,05US">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="qL7k!ySr8iA{$gYu5e8U">
+                    <field name="TEXT">/</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text_join" id="CscYg+X2%kY,v`3/z,D:">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="math_random_int" id="M+/ZV{@IRTi_oQC?q.6h">
+                        <value name="FROM">
+                          <block type="math_number" id="fS=I3LWdj#h7G-wox;]-">
+                            <field name="NUM">60</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_number" id="K=)L8p:^+wE;qPo0nhyS">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text" id="YDP`Tt+TSK@dg6-O56XI">
+                        <field name="TEXT"> mmHg</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="FNDgvrLj(:+}Q#2dkc%G">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="temp"></mutation>
+            <field name="COMPONENT_SELECTOR">temp</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text_join" id="g0M_5_rnM8=4JEBH:0jq">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="math_random_int" id="7K6uExuP``?HfumHdt}[">
+                    <value name="FROM">
+                      <block type="math_number" id="]MPmRQqH-QGgaJNBFDv3">
+                        <field name="NUM">36</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_number" id="hY|+9-^HVvl4|Q,X-/o|">
+                        <field name="NUM">39</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text_join" id="e4Y`c|PHV]=a#+;1?5AI">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="tJURW2Dod}P9i1vUsCy)">
+                        <field name="TEXT">.</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text_join" id=")wYdN,!li.ApKS?({C-{">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="math_random_int" id="futA9^11!zvql+b`ASe+">
+                            <value name="FROM">
+                              <block type="math_number" id="}7ubVgEH.*bz]Z0!H1I`">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="math_number" id="WebX1^c1_kqv0[Ku9xC4">
+                                <field name="NUM">99</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="text" id="vi{`FN.o0e!aqSgP7hJy">
+                            <field name="TEXT"> C</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="ESGM4vG7O}7cfw9gZ1}%">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="oxy"></mutation>
+                <field name="COMPONENT_SELECTOR">oxy</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text_join" id="T4wV:(|NdviPneGy}Vqm">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="math_random_int" id="|;(32[FT-99)z%=G$9~r">
+                        <value name="FROM">
+                          <block type="math_number" id="zIc64l)@OAvMNz{Q%C6H">
+                            <field name="NUM">75</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_number" id="U}w{n5NWH:0R_K3P}A@@">
+                            <field name="NUM">98</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text" id="-8W|]I-bY%=|)b$1^viu">
+                        <field name="TEXT">%</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="eOmK:;X[Hva+}[Si;/zA" x="-155" y="-493">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="t)8D#o0||%S=$DNkEFKT" inline="false">
+        <mutation name="clicked"></mutation>
+        <field name="PROCNAME">clicked</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="E9fP4q$M`kKfhrm^y[T}" x="-225" y="-330">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="intro" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">intro</field>
+    <statement name="DO">
+      <block type="component_method" id="t1nIXK]I$xDir),}c{yp">
+        <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="scanNo"></mutation>
+        <field name="COMPONENT_SELECTOR">scanNo</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="l_P2r7RSwv#~nK3OMZ`q" x="-307" y="-167">
+    <mutation component_type="Image" is_generic="false" instance_name="Image1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Image1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="z!5idiGxtN_T+*fQeEFv">
+        <value name="SCREEN">
+          <block type="text" id="j!-{(()Hta%O4{pqW(x5">
+            <field name="TEXT">HOME</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ExzN_zeFY*A[d:[?4(T8" x="95" y="-127">
+    <mutation component_type="Form" is_generic="false" instance_name="SCAN" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">SCAN</field>
+    <statement name="DO">
+      <block type="component_method" id="*Lwtmyg)kx~j2SwR(Ppd">
+        <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="intro"></mutation>
+        <field name="COMPONENT_SELECTOR">intro</field>
+        <value name="ARG0">
+          <block type="text" id="[(wKJrAJMXQHYn^*-F,g">
+            <field name="TEXT">You are currently on the health scan page. If you would like to have your biometrics scanned say, scan. If you wish to go back to the home page say, home.</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="%?p{.;`Db1$+t31keyg^">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="scanNo"></mutation>
+            <field name="COMPONENT_SELECTOR">scanNo</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="[Xk3pDsfk{VOJG8@5_:[">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=";*t4;M/!@Oez;e;z6x^P" x="-247" y="-67">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="scanNo" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">scanNo</field>
+    <statement name="DO">
+      <block type="controls_if" id=",yn{NBRX`k,TmSSiKN~3">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="g#9{J{*ZY}sI$p.r)n~b">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="WB-BPq_4S^bDyw*d=QUE">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="scanNo"></mutation>
+                <field name="COMPONENT_SELECTOR">scanNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="AGFQw43U+}!sPup~M5s`">
+                <field name="TEXT">scan</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="procedures_callnoreturn" id="{bB?*}A5wTjmj(yU-}b1" inline="false">
+            <mutation name="clicked"></mutation>
+            <field name="PROCNAME">clicked</field>
+            <next>
+              <block type="component_method" id="/}DvYk(76^:An:4sZ]6Z">
+                <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="ask"></mutation>
+                <field name="COMPONENT_SELECTOR">ask</field>
+                <value name="ARG0">
+                  <block type="text" id="(FH4Nn=7v`8(@~Mv@CP(">
+                    <field name="TEXT">If you would like me to read out the result of your scan say, read.</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="-eri:*q]t:,zREI.{AEo">
+                    <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="yesNo"></mutation>
+                    <field name="COMPONENT_SELECTOR">yesNo</field>
+                    <field name="PROP">UseLegacy</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id=".b;Q|$7||]woKDYV{n$z">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="NM%?5a1}Y7M$|So--/dM">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="bkUPd~,~c{X_;X)p|7Oo">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="scanNo"></mutation>
+                <field name="COMPONENT_SELECTOR">scanNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="1PO(O~})~7GN,}bZu0qn">
+                <field name="TEXT">home</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="controls_openAnotherScreen" id="TvOVP_lDOVNV,,ig}+@]">
+            <value name="SCREEN">
+              <block type="text" id="m/(UXa(N(|1G+Ic$8p|=">
+                <field name="TEXT">HOME</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="1-7eek-ub14cY9`PxyYJ">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="scanNo"></mutation>
+            <field name="COMPONENT_SELECTOR">scanNo</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="31Mjx]sM$-L]~^fBbK$/">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="#]vDi2~P$MO#1OST)}t.">
+                <mutation component_type="SpeechRecognizer" method_name="Stop" is_generic="false" instance_name="scanNo"></mutation>
+                <field name="COMPONENT_SELECTOR">scanNo</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=",r]U2RkUlS^X%g:4oHT_" x="-468" y="108">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="ask" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">ask</field>
+    <statement name="DO">
+      <block type="component_method" id="=qqcc%QVJJab;iqs(_jk">
+        <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="yesNo"></mutation>
+        <field name="COMPONENT_SELECTOR">yesNo</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="eQ~$[!*F#*IpJPLMyR?_" x="-243" y="322">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="yesNo" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">yesNo</field>
+    <statement name="DO">
+      <block type="controls_if" id="=f9^Z6zTR~c;Y)b9TM=?">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="BnU333PUtF*lcY`Be*M,">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="gb([WpJ28PjI5+(,94U2">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="yesNo"></mutation>
+                <field name="COMPONENT_SELECTOR">yesNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="[|x%R/whYdW4R]H{Crxl">
+                <field name="TEXT">read</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="*kCh;D;)0#:/SWnEx6Wb">
+            <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="describe"></mutation>
+            <field name="COMPONENT_SELECTOR">describe</field>
+            <value name="ARG0">
+              <block type="text_join" id="+s/9J8WcdJ]H@2ol2U/P">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="+~**2#Kzd,)*ufm$t=Db">
+                    <field name="TEXT">You have a blood pressure of </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text_join" id="qqgf,(9)hv*4Ei:POjqE">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="component_set_get" id="96f+r(@xpOA(A$P4}=c_">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="bp"></mutation>
+                        <field name="COMPONENT_SELECTOR">bp</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text_join" id="kv4ox3F2lgANUm;^W.k-">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="+iS4K2t^^7VKOlGId=c)">
+                            <field name="TEXT">. You also have a temperature of </field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="text_join" id="LD6!PceWk?hFOq$le9pT">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <block type="component_set_get" id="kVV2`h/Q.Ju/c1TJJQV4">
+                                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="temp"></mutation>
+                                <field name="COMPONENT_SELECTOR">temp</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="text_join" id="CJ(Ye7VHRkv;A0a?oRXK">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <block type="text" id="m$WQdRI~Hk/2nyx_hv=h">
+                                    <field name="TEXT">. and you have an oxygen percentage of </field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="component_set_get" id="/UxNagW$pkTCP)LzF@h=">
+                                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="oxy"></mutation>
+                                    <field name="COMPONENT_SELECTOR">oxy</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="rsnFB,k9+x]+RWV([];B">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="yesNo"></mutation>
+            <field name="COMPONENT_SELECTOR">yesNo</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="VPj.5xO`i36/vVMi31;V">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="69V?h}vO}9BA79uLs$O$">
+                <mutation component_type="SpeechRecognizer" method_name="Stop" is_generic="false" instance_name="yesNo"></mutation>
+                <field name="COMPONENT_SELECTOR">yesNo</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

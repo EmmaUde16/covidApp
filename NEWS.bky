@@ -1,0 +1,371 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="[b}i=Ln+Oq2|oXKzomdp" x="349" y="-750">
+    <field name="NAME">read</field>
+    <statement name="STACK">
+      <block type="controls_if" id="~GPinQI?IW`dk1H+^]C4">
+        <value name="IF0">
+          <block type="logic_compare" id="Te|5]Y{bQpE/H!1]eLf!">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="Uc%w.nX{Oh,Q1*LP`|}#">
+                <mutation component_type="VerticalScrollArrangement" set_or_get="get" property_name="Visible" is_generic="false" instance_name="VerticalScrollArrangement2"></mutation>
+                <field name="COMPONENT_SELECTOR">VerticalScrollArrangement2</field>
+                <field name="PROP">Visible</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_boolean" id="Kp12Vk**)SP[0d18@2x*">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="asY^=[McC9BPDv_N^AxJ">
+            <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="ask"></mutation>
+            <field name="COMPONENT_SELECTOR">ask</field>
+            <value name="ARG0">
+              <block type="text" id="s0wU(3w!C*3ZiO-GI#[q">
+                <field name="TEXT">If you would like me to read out the news feed for you say, read.</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="O1(Gb@(?keA)xC}Ij=tz" x="-616" y="-630">
+    <mutation component_type="Form" is_generic="false" instance_name="NEWS" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">NEWS</field>
+    <statement name="DO">
+      <block type="component_method" id="Ewykm%MgNXkiIuH0EWNc">
+        <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="openIntro"></mutation>
+        <field name="COMPONENT_SELECTOR">openIntro</field>
+        <value name="ARG0">
+          <block type="text" id="qWPexGEcK*WcvR=w.?M~">
+            <field name="TEXT">You are currently on the NEWS page. If you want me to open the latest news feed say, open. If you would like to go back to the home page say, home.</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="H:0_#Glv|0};KB2/]a4L">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="yesNo"></mutation>
+            <field name="COMPONENT_SELECTOR">yesNo</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="urUIa1Y8xH(w;i!An*){">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="029O6$tog1kGyZMGBX9y" x="14" y="-641">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="yesNo" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">yesNo</field>
+    <statement name="DO">
+      <block type="controls_if" id="6ay(%}.Ooj2y)uh%^95#">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="pt7Wtks`osIzG$YhQ3_h">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="zq#f,[4MKi$x.NeP#wAM">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="yesNo"></mutation>
+                <field name="COMPONENT_SELECTOR">yesNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="8H{SetH/mSJHFl},Z^;I">
+                <field name="TEXT">open</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="3S)Jh^tyL=5FK=YSfc$R">
+            <mutation component_type="VerticalScrollArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VerticalScrollArrangement2"></mutation>
+            <field name="COMPONENT_SELECTOR">VerticalScrollArrangement2</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="kyj9zht@mV7eFL*_8@Jf">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="BF3h0N?KexYyik4zKY)}" inline="false">
+                <mutation name="read"></mutation>
+                <field name="PROCNAME">read</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="Fk,+q8RI;26pj.AHt65+">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="N^^|5E:zR|E[fPNp%,T^">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="yesNo"></mutation>
+                <field name="COMPONENT_SELECTOR">yesNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="V2b`hv#qJzbtW,{vA9?p">
+                <field name="TEXT">home</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="controls_openAnotherScreen" id="FCAb^+=:TG;.f`:{.;CL">
+            <value name="SCREEN">
+              <block type="text" id="+F@YHl00}5YiU8Q.DGbx">
+                <field name="TEXT">HOME</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="/M-,:SmXX$Gu0LJzAD26">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="yesNo"></mutation>
+            <field name="COMPONENT_SELECTOR">yesNo</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="8BfB^ve%aaiP(Nf7{u#$">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="b)0klR@K9YSv0/vqNBO#">
+                <mutation component_type="SpeechRecognizer" method_name="Stop" is_generic="false" instance_name="yesNo"></mutation>
+                <field name="COMPONENT_SELECTOR">yesNo</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="811SCe?=z5LkVjUq`?(}" x="604" y="-617">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="ask" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">ask</field>
+    <statement name="DO">
+      <block type="component_set_get" id="@{e{WLsAK9L-5lO1H$Cv">
+        <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="ReadNo"></mutation>
+        <field name="COMPONENT_SELECTOR">ReadNo</field>
+        <field name="PROP">UseLegacy</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="k^vLX$3G;O($]e/,g[@v">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="$lHjHrUb-w]S,97FV?o_">
+            <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="ReadNo"></mutation>
+            <field name="COMPONENT_SELECTOR">ReadNo</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="7:0-45VY1+?nGN0221ZU" x="-445" y="-471">
+    <mutation component_type="Image" is_generic="false" instance_name="Image1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Image1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="XwA38ja;c6QkM|@I;V6a">
+        <value name="SCREEN">
+          <block type="text" id="~vBdC/4P3N2SOhMjX$g1">
+            <field name="TEXT">HOME</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="6]B`@ngFFHz`@z`*$az`" x="-709" y="-444">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="openIntro" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">openIntro</field>
+    <statement name="DO">
+      <block type="component_method" id="Y~t%=tvD(n*Z,!Cnt+dv">
+        <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="yesNo"></mutation>
+        <field name="COMPONENT_SELECTOR">yesNo</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="D}?$eYF|k@iS?J=xj{GK" x="639" y="-492">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="ReadNo" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">ReadNo</field>
+    <statement name="DO">
+      <block type="controls_if" id="EB6r@y2~A*3Z@8gAFnMu">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id=";@W*=p-_gd}RY:63WTC5">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="!)~-lgb!UFIfluVTYaN-">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="ReadNo"></mutation>
+                <field name="COMPONENT_SELECTOR">ReadNo</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="-[-NtPR+J(yj!XOWO9Mh">
+                <field name="TEXT">read</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="hhpjZi;.Pq},qv/59W5^">
+            <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="read"></mutation>
+            <field name="COMPONENT_SELECTOR">read</field>
+            <value name="ARG0">
+              <block type="text_join" id=";LZnt-lDCAK7dXC+epzp">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="component_set_get" id="+vK[Ceh2serzK1S3=~Jf">
+                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label2"></mutation>
+                    <field name="COMPONENT_SELECTOR">Label2</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text_join" id="f6QplI|*nIw-dMyYdeTX">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="component_set_get" id="|8SZIh=eF{@1#/NYX)bI">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label3"></mutation>
+                        <field name="COMPONENT_SELECTOR">Label3</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text_join" id="a{Djdjy=r];@i0l.r~4K">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="component_set_get" id="|*Z)^gJE!Hp=^E5:+U{M">
+                            <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label4"></mutation>
+                            <field name="COMPONENT_SELECTOR">Label4</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="component_set_get" id="S{qII!Qfg1S|EkkpP+j7">
+                            <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label5"></mutation>
+                            <field name="COMPONENT_SELECTOR">Label5</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="c%R/csN}ix,C}5tzUR3@">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="ReadNo"></mutation>
+            <field name="COMPONENT_SELECTOR">ReadNo</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="m:ZL}d,f1m+mYKwASahI">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="Q(CIDFI7EU=(l@4-l?F5">
+                <mutation component_type="SpeechRecognizer" method_name="Stop" is_generic="false" instance_name="ReadNo"></mutation>
+                <field name="COMPONENT_SELECTOR">ReadNo</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="[pCvHqD#P74,}lL@20|U" x="-431" y="-382">
+    <mutation component_type="ListView" is_generic="false" instance_name="ListView1" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">ListView1</field>
+    <statement name="DO">
+      <block type="controls_if" id="ue:-6~(vu:Cs@Ps{9?-)">
+        <value name="IF0">
+          <block type="logic_compare" id="r|h{A)[5%[j]/$=5grq(">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="vW?5PWb6+Pt:L9TMHXhF">
+                <mutation component_type="ListView" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ListView1"></mutation>
+                <field name="COMPONENT_SELECTOR">ListView1</field>
+                <field name="PROP">Selection</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="/j5[pX8@uOy%U]I6*L_R">
+                <field name="TEXT">COVID19 Cases Are Still On the Rise!</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="Ji{p0$V:h,_h,2Yq?dQP">
+            <mutation component_type="VerticalScrollArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VerticalScrollArrangement2"></mutation>
+            <field name="COMPONENT_SELECTOR">VerticalScrollArrangement2</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="},M18STyk~^ESLy:g0:y">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="opoH$a5(UWH8R~x]2XbA" x="304" y="-304">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="read" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">read</field>
+    <statement name="DO">
+      <block type="component_method" id="XFp)p5R(#:rN$0x5Nezf">
+        <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="openIntro"></mutation>
+        <field name="COMPONENT_SELECTOR">openIntro</field>
+        <value name="ARG0">
+          <block type="text" id="t_P7eRIs+Q:yh)qGk?_l">
+            <field name="TEXT">If you wish to go back to the home page say, home.</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="x$]*4}Nzf#DSRn2;^1Ve" x="-275" y="-260">
+    <mutation component_type="Image" is_generic="false" instance_name="Image3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Image3</field>
+    <statement name="DO">
+      <block type="component_set_get" id="?|_rZ,a|NCZeYmI~bpM7">
+        <mutation component_type="ListView" set_or_get="set" property_name="Selection" is_generic="false" instance_name="ListView1"></mutation>
+        <field name="COMPONENT_SELECTOR">ListView1</field>
+        <field name="PROP">Selection</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id=".%`#EfYE9:N.wl8a:Dc_">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="da-zpPys}Jx=tOgszS@p">
+            <mutation component_type="VerticalScrollArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VerticalScrollArrangement2"></mutation>
+            <field name="COMPONENT_SELECTOR">VerticalScrollArrangement2</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="aEW+uc$wm3M=thzP)oS{">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

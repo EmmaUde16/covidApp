@@ -1,0 +1,344 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="bYj7~WEKia06`VpJhwz{" x="112" y="8">
+    <mutation component_type="Image" is_generic="false" instance_name="Image1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Image1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="vY,`89Jf50)PdkO9xkJK">
+        <value name="SCREEN">
+          <block type="text" id="*]18]U!yJhH)9BKfbQ;g">
+            <field name="TEXT">HOME</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=".`EgpKx@zo8WU4NQvV1?" x="87" y="107">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="e*~s~nFU.7n8HP;Px+|Q">
+        <mutation component_type="VerticalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VerticalArrangement1"></mutation>
+        <field name="COMPONENT_SELECTOR">VerticalArrangement1</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="Iq$APsX7T,L:OU|oxQ1|">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="C%/}`#l9E#u=C#CF(L43" x="82" y="177">
+    <mutation component_type="DatePicker" is_generic="false" instance_name="DatePicker1" event_name="AfterDateSet"></mutation>
+    <field name="COMPONENT_SELECTOR">DatePicker1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="SOM@$mt?Re)C2E%0`O~w">
+        <mutation component_type="DatePicker" set_or_get="set" property_name="Text" is_generic="false" instance_name="DatePicker1"></mutation>
+        <field name="COMPONENT_SELECTOR">DatePicker1</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="text_join" id="Thg{c2K6yXB=WdyjuO2j">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="component_set_get" id="E)40AU@VHBc^Ah9+pT+V">
+                <mutation component_type="DatePicker" set_or_get="get" property_name="Day" is_generic="false" instance_name="DatePicker1"></mutation>
+                <field name="COMPONENT_SELECTOR">DatePicker1</field>
+                <field name="PROP">Day</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text_join" id=")7J7n0}p}i2m3rXTm?kR">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="7HnZ}IKy6ksX/cN8cXXq">
+                    <field name="TEXT">/</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text_join" id="ffFnZ]Juq?)cc;!R2,aC">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="component_set_get" id="7dW@gh7-l#[C9a:saFyn">
+                        <mutation component_type="DatePicker" set_or_get="get" property_name="Month" is_generic="false" instance_name="DatePicker1"></mutation>
+                        <field name="COMPONENT_SELECTOR">DatePicker1</field>
+                        <field name="PROP">Month</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text_join" id="t@ru+XQ8piU:S+~ZsNJP">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="9$2l02:]1IfWOLcjkFzm">
+                            <field name="TEXT">/</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="component_set_get" id="xfw9]M#d-k|-GC#X+$@*">
+                            <mutation component_type="DatePicker" set_or_get="get" property_name="Year" is_generic="false" instance_name="DatePicker1"></mutation>
+                            <field name="COMPONENT_SELECTOR">DatePicker1</field>
+                            <field name="PROP">Year</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="JsdN0Ufm*;;nK@a)N*s0" x="64" y="370">
+    <mutation component_type="Button" is_generic="false" instance_name="Submit" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Submit</field>
+    <statement name="DO">
+      <block type="controls_if" id=".D[wL!1bNFu_^wNA%=)!">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_operation" id="TuABZ$W7rDxBm-3z,wr{">
+            <mutation items="2"></mutation>
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="Culu.BX%OO~Q+-`5FR.1">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="ITvHk6+ZlEom`p5CPWNr">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="Name"></mutation>
+                    <field name="COMPONENT_SELECTOR">Name</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="!WU;B:Xwx=9XorbSGa81">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="Bf5MCemPV8zW-E[ffnIN">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="#@w6H)Y~+fl!)w{L(+8#">
+                    <mutation component_type="DatePicker" set_or_get="get" property_name="Text" is_generic="false" instance_name="DatePicker1"></mutation>
+                    <field name="COMPONENT_SELECTOR">DatePicker1</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="m1Y83Y`[H$HEJqYcCyT-">
+                    <field name="TEXT">Date Of Birth</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="hzCH9h{2WP5|s#0q[aDh">
+            <value name="SCREEN">
+              <block type="text" id="vUH#9o+n9B[ozC%eG[LB">
+                <field name="TEXT">HOME</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id=",iq+y48XW)nQ=Pon{F_[">
+            <value name="IF0">
+              <block type="logic_compare" id="j5{OW9Dk*sCkiYiuk3:]">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="3*`c73l9hVZHl0!jkMZn">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="Name"></mutation>
+                    <field name="COMPONENT_SELECTOR">Name</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="08*R.IY#?eG5POYj#917">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="fh2_[`vj%pyRZ8cgVqhN">
+                <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="NameError"></mutation>
+                <field name="COMPONENT_SELECTOR">NameError</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="2@Q^=#`(qY6u8$|6t2Yd">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="zrox;^2BO;NNNWZ^ZI~^">
+                <value name="IF0">
+                  <block type="logic_compare" id="|@UtuwF*ZvE+WcXx83?:">
+                    <field name="OP">NEQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="rNsrGiC*Yj$j3@kv_)jc">
+                        <mutation component_type="DatePicker" set_or_get="get" property_name="Text" is_generic="false" instance_name="DatePicker1"></mutation>
+                        <field name="COMPONENT_SELECTOR">DatePicker1</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="jM6`|%~`)13K~#lN$k3H">
+                        <field name="TEXT">Date Of Birth</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_set_get" id="mYabRHEYr/9i;(/.h=7e">
+                    <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="NameError"></mutation>
+                    <field name="COMPONENT_SELECTOR">NameError</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="Tz*73JA}@a0]Ow5_FCf2">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="8(s)I48T3sU`xBN[9hO5" x="-330" y="417">
+    <mutation component_type="PhoneCall" is_generic="false" instance_name="PhoneCall1" event_name="PhoneCallEnded"></mutation>
+    <field name="COMPONENT_SELECTOR">PhoneCall1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="m,MqiWo/^1*;zMl:TWTv">
+        <value name="SCREEN">
+          <block type="text" id="h[G|5Jc]4fE{,Z9)qHXT">
+            <field name="TEXT">HOME</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="nM,|3lRB{:JIn8FGOg%r" x="-164" y="674">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="introCall" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">introCall</field>
+    <statement name="DO">
+      <block type="component_method" id="8FSCtJ_6odRYVs,?_7vs">
+        <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="SpeechRecognizer1"></mutation>
+        <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="~C|3I#3qacsiXI~%orVz" x="342" y="681">
+    <mutation component_type="Form" is_generic="false" instance_name="REPORT" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">REPORT</field>
+    <statement name="DO">
+      <block type="component_method" id="sf7S*F`^KhhnK:b|~|y7">
+        <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="introCall"></mutation>
+        <field name="COMPONENT_SELECTOR">introCall</field>
+        <value name="ARG0">
+          <block type="text" id="2rxw$E3mT`0NFZlMy4Ih">
+            <field name="TEXT">You are currently on the COVID report page. If you would like to speak with a customer service personnel to report your symptoms say, call. If you wish to go back to the home page say, home.</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="]O:?-D;Wg.U=;{)%#`[}">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="SpeechRecognizer1"></mutation>
+            <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="%+7CIBm8L8de)DFinnh2">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Nni:8B/GPB/~Mu]L]~zb" x="-144" y="774">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="SpeechRecognizer1" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+    <statement name="DO">
+      <block type="controls_if" id="~vLOhFe*m6ec20!31aEn">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="=*[IPh8UcH?EBI%:%lMq">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="Z%@OZ@Py/K@{@2@B*?==">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="SpeechRecognizer1"></mutation>
+                <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="31BRg|3u%)d3t7XLxx*x">
+                <field name="TEXT">call</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="yHXowLS90V*VWPKd#1GQ">
+            <mutation component_type="PhoneCall" method_name="MakePhoneCallDirect" is_generic="false" instance_name="PhoneCall1"></mutation>
+            <field name="COMPONENT_SELECTOR">PhoneCall1</field>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="edEAfm$RKNJ!QQU^dBUo">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="M6XfRDks|DdB/e+/|+b.">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="SpeechRecognizer1"></mutation>
+                <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="RTfV:l#`zj@a1$b7zM-b">
+                <field name="TEXT">home</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="controls_openAnotherScreen" id="rjWkwA#E3QlI4gh-%h9J">
+            <value name="SCREEN">
+              <block type="text" id="I$[V~gPx9J3~ZaIo.3$h">
+                <field name="TEXT">HOME</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id=")vGv;!jAJ:BVbaXK6scs">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="SpeechRecognizer1"></mutation>
+            <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="C+ocw!C6VbEm1JFE8+P-">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="vSC`_=:`]ZV(/vBxv@/N">
+                <mutation component_type="SpeechRecognizer" method_name="Stop" is_generic="false" instance_name="SpeechRecognizer1"></mutation>
+                <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

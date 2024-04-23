@@ -1,0 +1,200 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="!XwZhsN~@-?SI|T6fmav" x="-932" y="-1044">
+    <mutation component_type="Image" is_generic="false" instance_name="Image1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Image1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="14gbn2_.e4~C^~4,g0]e">
+        <value name="SCREEN">
+          <block type="text" id="9,[10QsRReWll~pvp(9;">
+            <field name="TEXT">HOME</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="[{TYbZPNq]QwlQ~eM{L8" x="-974" y="-926">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="controls_if" id=".aU%|+A(T@h@A8?SKn5]">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_operation" id="ZO?jGybGU(MgncD#AL1C">
+            <mutation items="2"></mutation>
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_operation" id="$P[m8)cf5Hz?K1O=a[^6">
+                <mutation items="2"></mutation>
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_compare" id="7;7W@x2fM)5H#9m/paHG">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="(_H2Q4C?K6DDsjfy9kO_">
+                        <mutation component_type="PasswordTextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="PasswordTextBox1"></mutation>
+                        <field name="COMPONENT_SELECTOR">PasswordTextBox1</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="component_set_get" id="IZAew:M,_UZpcA8yB77W">
+                        <mutation component_type="PasswordTextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="PasswordTextBox2"></mutation>
+                        <field name="COMPONENT_SELECTOR">PasswordTextBox2</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="so=GJ(!8UqSxt%nf]P;r">
+                    <field name="OP">NEQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="aZGqK~+z1^,IRDhPQ.4J">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                        <field name="COMPONENT_SELECTOR">TextBox1</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="dsX]w.9O1G6k{UVIQAn_">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="ck.;[t3j_f^TeNDvN3xY">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="^N#Z#GZf1HQyt~r`oY5~">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox2"></mutation>
+                    <field name="COMPONENT_SELECTOR">TextBox2</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="V@hk6$T|_Rf=I^Z4~{?Y">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="Kv[71_fi.rEYqTL.w$]i">
+            <value name="SCREEN">
+              <block type="text" id=";mb,7H!|o!za(Zh7|_#}">
+                <field name="TEXT">HOME</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id="d?8p/e+O5MaiUO8UYWW.">
+            <value name="IF0">
+              <block type="logic_compare" id="hZmUbD;bP8l:@Tjn!Eb1">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="I@[tL8lY~{voD?qJGdL!">
+                    <mutation component_type="PasswordTextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="PasswordTextBox1"></mutation>
+                    <field name="COMPONENT_SELECTOR">PasswordTextBox1</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="component_set_get" id="4gu4#ywXJ7La=}f@0j$}">
+                    <mutation component_type="PasswordTextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="PasswordTextBox2"></mutation>
+                    <field name="COMPONENT_SELECTOR">PasswordTextBox2</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="~T@jwB=dLiY0(!*[OnNZ">
+                <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="ErrorPassword"></mutation>
+                <field name="COMPONENT_SELECTOR">ErrorPassword</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="wQ6bY;[W112HPdexcYi}">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="Ip[JbBVPXn|0m8qCqrP)">
+                <value name="IF0">
+                  <block type="logic_compare" id="Rk}8dDFi?U49NG)wlwqT">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="%udi5}H5[P/%w[Q)!z7p">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                        <field name="COMPONENT_SELECTOR">TextBox1</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="ijV^;jQy$ByTF7Vw1YjB">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_set_get" id="@IDM[+%pytGi+--(ebuM">
+                    <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="ErrorName"></mutation>
+                    <field name="COMPONENT_SELECTOR">ErrorName</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="htW8(b]@x8isG{WFO/1s">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="K0sg`~(Vg/{lesk(+ai:">
+                    <value name="IF0">
+                      <block type="logic_compare" id="]uEp=0$7E@8QlV*Cn(kL">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="component_set_get" id="iExuDyqL7sZr3g=BH-*Y">
+                            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox2"></mutation>
+                            <field name="COMPONENT_SELECTOR">TextBox2</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="FzFvNc4`.5Fxsl1Y:3ZN">
+                            <field name="TEXT"></field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="component_set_get" id="(yYDd#`[O}ciC$la0bOw">
+                        <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="ErrorEmail"></mutation>
+                        <field name="COMPONENT_SELECTOR">ErrorEmail</field>
+                        <field name="PROP">Visible</field>
+                        <value name="VALUE">
+                          <block type="logic_boolean" id="uK|CE,Mpk*9M(9.$}cP0">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

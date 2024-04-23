@@ -1,0 +1,392 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="kMtW_1z~n(4mTjc0(Qk@" x="-1890" y="-1080">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="Npage" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">Npage</field>
+    <statement name="DO">
+      <block type="controls_if" id="CZzqLYOF=M)mPCI0s.0O">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="|/hpvqlQ:qs!vU[14dcS">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="x2=IquqLLzf/cnhfngH~">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="Npage"></mutation>
+                <field name="COMPONENT_SELECTOR">Npage</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="m|8Pk9cp[0nHvq##yBNH">
+                <field name="TEXT">login</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="c(H`+(5:`51HG~`v5p.d">
+            <value name="SCREEN">
+              <block type="text" id="q?Y|$!]qTM$]=b]Pmw)o">
+                <field name="TEXT">LOGIN</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="l#rF}gu[/%j^xc)*ylmz">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="xSEwpf-LG~b}zYC+[*VP">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="Npage"></mutation>
+                <field name="COMPONENT_SELECTOR">Npage</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="elxA|GYS?s,Mi[G{e-`4">
+                <field name="TEXT">track</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="controls_openAnotherScreen" id="2JOsE.uMavInU`C9kD#P">
+            <value name="SCREEN">
+              <block type="text" id="!My2oU{o$H(3~EdhpagR">
+                <field name="TEXT">TRACKER</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id=")*1@BQaTgol[G..2tqBa">
+            <mutation elseif="1" else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="@DPlcn;LZ142t%AGIk3+">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="ggk3|nm*R(Kt,4Mo4]+C">
+                    <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="Npage"></mutation>
+                    <field name="COMPONENT_SELECTOR">Npage</field>
+                    <field name="PROP">Result</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="t4q,4#$W{hw,#Pge%VG(">
+                    <field name="TEXT">scan</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_openAnotherScreen" id="?*7U5E!u[:8MIGqHzG-X">
+                <value name="SCREEN">
+                  <block type="text" id="D8GhIR^tN%v?RKtVKSQZ">
+                    <field name="TEXT">SCAN</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="R{bO]O+[(vR}ZKnWR,)*">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="q2E}S6p!?qsPeQIGs}%O">
+                    <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="Npage"></mutation>
+                    <field name="COMPONENT_SELECTOR">Npage</field>
+                    <field name="PROP">Result</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="t5vdDNBT/}1y*/8W*AFH">
+                    <field name="TEXT">news</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="controls_openAnotherScreen" id="k*[^u+686P?Z?$%U@jY5">
+                <value name="SCREEN">
+                  <block type="text" id="V|QwH*8X[Jp3cjwFUqO5">
+                    <field name="TEXT">NEWS</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="controls_if" id="8;S3@6Wahj%F|PnO@I99">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="hV?k;ZDO:${Z:OIhN:jB">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="OrM*U]i!Rs85F{`l5Vpk">
+                        <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="Npage"></mutation>
+                        <field name="COMPONENT_SELECTOR">Npage</field>
+                        <field name="PROP">Result</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="`nB~Dn2/1Is_7bSR.JVv">
+                        <field name="TEXT">report</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_openAnotherScreen" id="n1A_GIZE@!(zwj)pjiZl">
+                    <value name="SCREEN">
+                      <block type="text" id="7L;EDeM.ba^Vg.ffIJ(q">
+                        <field name="TEXT">REPORT</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="component_method" id="k(Thsq2c3d2i-fRRu%;~">
+                    <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="HomeContents"></mutation>
+                    <field name="COMPONENT_SELECTOR">HomeContents</field>
+                    <value name="ARG0">
+                      <block type="text" id="?sQAU@g(4?}q3HDic.|I">
+                        <field name="TEXT">To log into your account say, login. To read the news say, news. To analyse your current health state say, scan. To report COVID symptoms say, report. To see those around you that may have contracted the virus say, Track. </field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ke7gI}~tzit-:c2wA}n5" x="-2160" y="-560">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="Intro" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">Intro</field>
+    <statement name="DO">
+      <block type="component_set_get" id="aC/MVPFC=Qnv`T@.mULt">
+        <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="intro"></mutation>
+        <field name="COMPONENT_SELECTOR">intro</field>
+        <field name="PROP">UseLegacy</field>
+        <value name="VALUE">
+          <block type="logic_false" id="cDmL$)g~eR+sGI{UHG4S">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="Icn.`v-7CzFp^_(K{2D_">
+            <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="intro"></mutation>
+            <field name="COMPONENT_SELECTOR">intro</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="]Mgz,P0N.#Zg:i+MAaYT" x="-1321" y="-492">
+    <mutation component_type="SpeechRecognizer" is_generic="false" instance_name="intro" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">intro</field>
+    <statement name="DO">
+      <block type="controls_if" id="v}EZqZRp(/`VVi9huFv2">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="B*e]-%K#uDG?4xOAy81A">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="y?J7eewGBl!B@traqkUj">
+                <mutation component_type="SpeechRecognizer" set_or_get="get" property_name="Result" is_generic="false" instance_name="intro"></mutation>
+                <field name="COMPONENT_SELECTOR">intro</field>
+                <field name="PROP">Result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="ec@MmsXg22lcYQP?:UFs">
+                <field name="TEXT">speak</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="P3!6a9RP+tte%W[~9vp]">
+            <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="HomeContents"></mutation>
+            <field name="COMPONENT_SELECTOR">HomeContents</field>
+            <value name="ARG0">
+              <block type="text" id=":BsAD]=*3Jy#;/f=pawu">
+                <field name="TEXT">To log into your account say, login. To read the news say, news. To analyse your current health state say, scan. To report COVID symptoms say, report. To see those around you that may have contracted the virus say, Track. </field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="}[CEwK|Nw`8/;X9Jq1H8">
+            <mutation component_type="SpeechRecognizer" set_or_get="set" property_name="UseLegacy" is_generic="false" instance_name="intro"></mutation>
+            <field name="COMPONENT_SELECTOR">intro</field>
+            <field name="PROP">UseLegacy</field>
+            <value name="VALUE">
+              <block type="logic_false" id=",@IAPAw:B1Ocu~p.lLi!">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="H[orZ556!RGHqa_vrz#v">
+                <mutation component_type="SpeechRecognizer" method_name="Stop" is_generic="false" instance_name="intro"></mutation>
+                <field name="COMPONENT_SELECTOR">intro</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ErIWm;:CHn0KTzdRAS-1" x="-395" y="-353">
+    <mutation component_type="Button" is_generic="false" instance_name="Report" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Report</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="69^O)L_BS,Eng?g3y!B@">
+        <value name="SCREEN">
+          <block type="text" id="zl]I4/nCI^LkH..F}KY`">
+            <field name="TEXT">REPORT</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="31q:FU0$Ch/~Bb{q?|?3" x="-1816" y="-269">
+    <mutation component_type="Form" is_generic="false" instance_name="HOME" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">HOME</field>
+    <statement name="DO">
+      <block type="component_method" id="QX-v),*EPCY-tBy*_.Xr">
+        <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="Intro"></mutation>
+        <field name="COMPONENT_SELECTOR">Intro</field>
+        <value name="ARG0">
+          <block type="text" id="Hfy+b{FoQ6WOl)WD}x^A">
+            <field name="TEXT">Welcome to the COVID plus app. To make this app more accessible say the word, speak.</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ghq!PG`]#=:*4KIUo{=t" x="-422" y="-226">
+    <mutation component_type="Button" is_generic="false" instance_name="Login" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Login</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="IvZfI)Gc-qgl)iKxz?{(">
+        <value name="SCREEN">
+          <block type="text" id="SB,WR4pEIVo};JKiGqUH">
+            <field name="TEXT">LOGIN</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="WkE2l:{1CJaYnKlUf_1k" x="-1321" y="-131">
+    <mutation component_type="Image" is_generic="false" instance_name="News" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">News</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="hGdFjCw$G8Vf(~bQF}KJ">
+        <value name="SCREEN">
+          <block type="text" id="bm;0394b}7G[.d}{i-At">
+            <field name="TEXT">NEWS</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="D~en.!IW`%KGsc6E]n3C" x="-377" y="-158">
+    <mutation component_type="Button" is_generic="false" instance_name="Tracker" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Tracker</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="ud`2ez7Zzpq5c}NqLj+?">
+        <value name="SCREEN">
+          <block type="text" id="F#43qV(Jpt)f0hE7=}7M">
+            <field name="TEXT">TRACKER</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Ru$vk2W)jg?{6T~|~z#g" x="-1854" y="-80">
+    <mutation component_type="TextToSpeech" is_generic="false" instance_name="HomeContents" event_name="AfterSpeaking"></mutation>
+    <field name="COMPONENT_SELECTOR">HomeContents</field>
+    <statement name="DO">
+      <block type="component_method" id="%[G5udf?(VMpT45,):@2">
+        <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="Npage"></mutation>
+        <field name="COMPONENT_SELECTOR">Npage</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="rYk!rkzwOd8gcdC#H(b6" x="-521" y="-68">
+    <mutation component_type="Button" is_generic="false" instance_name="NewsButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">NewsButton</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="+Mrg#_4y@w(o(PxFPfsg">
+        <value name="SCREEN">
+          <block type="text" id="rs}yFZ6Y#=;l8+8|ulgf">
+            <field name="TEXT">NEWS</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="4@-xm^H6d$K/GA_q#_{/" x="-1850" y="47">
+    <mutation component_type="Clock" is_generic="false" instance_name="Clock1" event_name="Timer"></mutation>
+    <field name="COMPONENT_SELECTOR">Clock1</field>
+    <statement name="DO">
+      <block type="component_method" id="Hj6mgFaNQ.3z$[0QJI96">
+        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="text" id="*+N(:`kcQ~;ZhcMNRy70">
+            <field name="TEXT">NEWS: COVID19 Cases are Still On the Rise!</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="8tTjm/w-y.%3o$1NMenr">
+            <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="Notification"></mutation>
+            <field name="COMPONENT_SELECTOR">Notification</field>
+            <value name="ARG0">
+              <block type="text" id="RWP1fP|M%HeQ~Z$BD]2C">
+                <field name="TEXT">You have a new notification from the NEWS page: COVID19 Cases are Still On the Rise!</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="u%zn;b?[~j$Sa`9~/8#I">
+                <mutation component_type="Sound" method_name="Vibrate" is_generic="false" instance_name="Sound1"></mutation>
+                <field name="COMPONENT_SELECTOR">Sound1</field>
+                <value name="ARG0">
+                  <block type="math_number" id="U=W_9%Ml7)LondgVTl!@">
+                    <field name="NUM">3000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="0)=w3$|bm_8G.(#nC^b/">
+                    <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Clock1</field>
+                    <field name="PROP">TimerEnabled</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="9h.klB+ES5jdUi-4tG-O">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="tdSp.gY?9]?|[9-gFi=Y" x="-456" y="3">
+    <mutation component_type="Button" is_generic="false" instance_name="Scan" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Scan</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="iWVv#U`P^5nCQ7fihS-i">
+        <value name="SCREEN">
+          <block type="text" id="+iAX@n~onJ0`/CVIY(~m">
+            <field name="TEXT">SCAN</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>
